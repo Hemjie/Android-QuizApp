@@ -18,9 +18,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/quiz"
-        android:gravity="center"
-        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="75dp"
     />
 
     <TextView
@@ -33,7 +31,47 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bienvenue"
+        />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Pseudo"
+        style="@style/WelcomePage"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit_nickname"
+        app:layout_constraintTop_toBottomOf="@id/quiz"
+        android:layout_marginTop="75dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nickname"
+        android:hint="pseudo"
+        style="@style/WelcomePage"
+        android:background="@color/lightBlueGrey"
+        android:layout_marginHorizontal="35dp"
+        />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Envoyer"
+        android:backgroundTint="@color/purple_700"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25sp"
+        android:layout_marginBottom="75dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

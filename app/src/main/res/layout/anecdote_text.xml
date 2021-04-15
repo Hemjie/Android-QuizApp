@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey"
+    >
+
+    <TextView
+        android:id="@+id/anecdote_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANECDOTE : "
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_marginVertical="15dp"
+        />
+
+    <TextView
+        android:id="@+id/anecdote_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Ici se trouve l'anecdote relative à la question qui vient
+d'être posée à l'utilisateur"
+        android:textSize="25sp"
+        android:layout_marginVertical="15dp"
+        android:paddingHorizontal="20dp"
+        />
+
+    <Button
+        android:id="@+id/anecdote_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lien vers Wikipédia"
+        android:backgroundTint="@color/blueGrey"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginVertical="15dp"
+        />
+
+</LinearLayout>

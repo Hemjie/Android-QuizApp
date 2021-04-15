@@ -12,6 +12,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -33,12 +34,16 @@ class WelcomeActivity : AppCompatActivity() {
         val btnSend: Button = findViewById(R.id.btn_send)
 
         btnSend.setOnClickListener{
-            val intent = Intent(this, NumberActivity::class.java)
-            intent.action = Intent.ACTION_VIEW
+            if (nicknameEditText.length() >= 3) {
+                val intent = Intent(this, NumberActivity::class.java)
+                intent.action = Intent.ACTION_VIEW
 
-            startActivity(intent)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Pseudo trop court", Toast.LENGTH_LONG).show()
+            }
         }
-
+        
     }
 
     private fun getNicknameSharedPreference(): String? {

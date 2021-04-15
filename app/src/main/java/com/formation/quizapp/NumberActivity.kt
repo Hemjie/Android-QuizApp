@@ -13,26 +13,42 @@ class NumberActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_number)
 
-
         val btn5 = findViewById<Button>(R.id.nb_btn_5)
         Log.i("NumberActivity", "${btn5.text}")
 
         btn5.setOnClickListener {
             val intent = Intent(this, QuestionActivity::class.java)
+            intent.putExtra("nbQuestions", btn5.text)
             intent.action = Intent.ACTION_VIEW
+            startActivity(intent)
         }
 
-        val btn10: Button = findViewById(R.id.nb_btn_10)
-        val btn15: Button = findViewById(R.id.nb_btn_15)
-        val btn20: Button = findViewById(R.id.nb_btn_20)
-    }
+        val btn10 = findViewById<Button>(R.id.nb_btn_10)
 
-    /*override fun onClick(v: View) {
-            val btn5 = findViewById<Button>(R.id.nb_btn_5)
-            Log.i("NumberActivity", "${btn5.text}")
+        btn10.setOnClickListener {
             val intent = Intent(this, QuestionActivity::class.java)
+            intent.putExtra("nbQuestions", btn10.text)
+            intent.action = Intent.ACTION_VIEW
             startActivity(intent)
+        }
 
-    }*/
+        val btn15 = findViewById<Button>(R.id.nb_btn_15)
+
+        btn15.setOnClickListener {
+            val intent = Intent(this, QuestionActivity::class.java)
+            intent.putExtra("nbQuestions", btn15.text)
+            intent.action = Intent.ACTION_VIEW
+            startActivity(intent)
+        }
+
+        val btn20 = findViewById<Button>(R.id.nb_btn_20)
+
+        btn20.setOnClickListener {
+            val intent = Intent(this, QuestionActivity::class.java)
+            intent.putExtra("nbQuestions", btn20.text)
+            intent.action = Intent.ACTION_VIEW
+            startActivity(intent)
+        }
+    }
 
 }

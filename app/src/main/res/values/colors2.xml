@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wrongRed">#1b5e20</color>
+    <color name="lightWrongRed">#4c8c4a</color>
+    <color name="darkWrongRed">#003300</color>
+    <color name="rightGreen">#bf0000</color>
+    <color name="lightRightGreen">#fa4c2e</color>
+    <color name="darkRightGreen">#870000</color>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkGrey">#212121</color>
+    <color name="mediumGrey">#484848</color>
+    <color name="darkBlack">#000000</color>
+    <color name="blueGrey">#546e7a</color>
+    <color name="lightBlueGrey">#819ca9</color>
+    <color name="darkBlueGrey">#29434e</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+</resources>
+
+
+

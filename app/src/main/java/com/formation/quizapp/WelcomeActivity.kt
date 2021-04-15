@@ -3,18 +3,11 @@ package com.formation.quizapp
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -34,13 +27,12 @@ class WelcomeActivity : AppCompatActivity() {
         val btnSend: Button = findViewById(R.id.btn_send)
 
         btnSend.setOnClickListener{
-            if (nicknameEditText.length() >= 3) {
+            if (nicknameEditText.length() in 3..10) {
                 val intent = Intent(this, NumberActivity::class.java)
                 intent.action = Intent.ACTION_VIEW
-
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "Pseudo trop court", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Pseudo entre 3 à 10 caractères", Toast.LENGTH_LONG).show()
             }
         }
         

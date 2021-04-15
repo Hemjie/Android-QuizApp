@@ -4,6 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".NumberActivity">
+
+    <TextView
+        android:id="@+id/nb_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nb_btn_5"
+        android:text="Nombre de questions"
+        style="@style/WelcomePage"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/nb_btn_5"
+        style="@style/NbButton"
+        android:text="5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/nb_btn_10"
+        app:layout_constraintTop_toBottomOf="@id/nb_title"
+        app:layout_constraintBottom_toTopOf="@id/nb_btn_15"
+        />
+
+    <Button
+        android:id="@+id/nb_btn_10"
+        style="@style/NbButton"
+        android:text="10"
+        app:layout_constraintLeft_toRightOf="@id/nb_btn_5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nb_title"
+        app:layout_constraintBottom_toTopOf="@id/nb_btn_20"
+        />
+
+    <Button
+        android:id="@+id/nb_btn_15"
+        style="@style/NbButton"
+        android:text="15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/nb_btn_10"
+        app:layout_constraintTop_toBottomOf="@id/nb_btn_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/nb_btn_20"
+        style="@style/NbButton"
+        android:text="20"
+        app:layout_constraintLeft_toRightOf="@id/nb_btn_15"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nb_btn_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
